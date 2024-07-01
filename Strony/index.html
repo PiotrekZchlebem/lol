@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przykładowy Sklep</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header>
+        <h1>Przykładowy Sklep</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Strona główna</a></li>
+                <li><a href="#products">Produkty</a></li>
+                <li><a href="#cart">Koszyk (<span id="cart-count">0</span>)</a></li>
+                <li><a href="admin.html">Panel Admina</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Główna zawartość -->
+    <main id="content">
+        <section id="home">
+            <h2>Witamy w naszym sklepie!</h2>
+            <p>Znajdziesz u nas najlepsze produkty w najlepszych cenach.</p>
+        </section>
+
+        <section id="products">
+            <h2>Nasze Produkty</h2>
+            <div id="product-list">
+                <!-- Produkty będą dodawane dynamicznie -->
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Koszyk</h2>
+            <ul id="cart-items">
+                <li>Twój koszyk jest pusty</li>
+            </ul>
+            <button id="checkout" style="display:none;">Do kasy</button>
+        </section>
+    </main>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2024 Przykładowy Sklep</p>
+    </footer>
+
+    <!-- Skrypt JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

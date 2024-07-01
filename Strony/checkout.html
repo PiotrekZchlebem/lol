@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Skrypt PayPal -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AZffRXsKyxHupZbMLBJuyOQ2kPtXmJJGKkGwe5vWU4gNWZpnrVGTt-_jOlvT3pKbHOPr3VORWM527MJl&currency=PLN"></script>
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header>
+        <h1>Kasa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="index.html#products">Produkty</a></li>
+                <li><a href="index.html#cart">Koszyk (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Główna zawartość -->
+    <main id="content">
+        <h2>Podsumowanie zamówienia</h2>
+        <ul id="order-summary">
+            <!-- Tutaj zostaną wstawione produkty z koszyka -->
+        </ul>
+        <p>Łączna kwota: <span id="total-amount">0 PLN</span></p>
+        <div id="paypal-button-container"></div>
+    </main>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2024 Przykładowy Sklep</p>
+    </footer>
+
+    <!-- Skrypt JavaScript -->
+    <script src="js/checkout.js"></script>
+</body>
+</html>
